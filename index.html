@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Outloop — Walks that bring you back</title>
+  <meta name="description" content="Outloop finds walking and cycling loops that start at your door and bring you right back. Pick a mood and a time, and go.">
+  <meta property="og:title" content="Outloop — Walks that bring you back">
+  <meta property="og:description" content="Loops that start at your door and bring you right back. Pick a mood and a time, and go.">
+  <meta property="og:image" content="assets/loop-map.webp">
+  <meta name="theme-color" content="#fbfcfd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1013" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="28" height="28">Outloop</a>
+      <ul class="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#plus">Plus</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <a class="pill small" href="#get" data-appstore>Get the app</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: the loop on the map grows to fill the screen as you scroll. -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow" data-rise>Walk · Ride · Come back</div>
+        <h1 data-split>Go out. Come back <span class="serif">a little different.</span></h1>
+        <p class="lede" data-rise>Outloop finds walking and cycling loops that start at your door and bring you right back. Pick a mood and a time. That's it.</p>
+        <div class="ctas" data-rise>
+          <a class="pill" href="#get" data-appstore>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.7c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.05-1.65-1.3-.13-2.53.76-3.19.76-.66 0-1.67-.74-2.75-.72-1.41.02-2.72.82-3.45 2.09-1.47 2.55-.38 6.33 1.06 8.4.7 1.01 1.53 2.15 2.62 2.11 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.74.66 1.13-.02 1.85-1.03 2.54-2.05.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.2-.85-2.22-3.36zM14.3 6.53c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1 1.61-.88 2.56.93.07 1.88-.47 2.46-1.16z"/></svg>
+            <span data-appstore-label>Download on the App Store</span>
+          </a>
+          <a class="pill ghost" href="#how">See how it works</a>
+        </div>
+      </div>
+
+      <div class="hero-stage">
+        <div class="hero-frame">
+          <img src="assets/loop-map.webp" alt="A loop drawn through a leafy neighbourhood, passing a coffee shop and a sandwich stop before returning to the start." width="1400" height="934" fetchpriority="high">
+          <div class="tag t1" aria-hidden="true"><i>☕</i>Brew Mood Coffee <small>6 min</small></div>
+          <div class="tag t2" aria-hidden="true"><i>🥪</i>Corner deli <small>18 min</small></div>
+          <div class="tag t3" aria-hidden="true"><i>🌳</i>Through the park <small>27 min</small></div>
+          <div class="tag t4" aria-hidden="true"><i>●</i>Start · Finish <small>36 min · 2.6 km</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" aria-label="What Outloop is">
+      <div class="wrap">
+        <p data-fill>No planning. No maps to study. No walking back the way you came. Just a loop that ends where it began.</p>
+      </div>
+    </section>
+
+    <!-- Moods: one sentence, five different afternoons. -->
+    <section class="moods" aria-labelledby="moods-title">
+      <div class="moods-pin">
+        <div class="copy">
+          <div class="eyebrow">Pick a mood</div>
+          <h2 id="moods-title">Today feels like
+            <span class="mood-word" aria-live="off">
+              <span class="serif">a coffee.</span>
+              <span class="serif">the waterfront.</span>
+              <span class="serif">golden hour.</span>
+              <span class="serif">somewhere quiet.</span>
+              <span class="serif">a long ride.</span>
+            </span>
+          </h2>
+          <p>Tell Outloop what kind of time you want to have. It builds the loop around real cafés, parks, water and quiet streets near you.</p>
+        </div>
+        <div class="mood-stack">
+          <img src="assets/coffee.webp" alt="Coffee to go on a café table" width="1400" height="2100" loading="lazy">
+          <img src="assets/waterfront.webp" alt="A path along the water" width="1400" height="934" loading="lazy">
+          <img src="assets/sunset.webp" alt="A path at sunset with the city below" width="1400" height="2100" loading="lazy">
+          <img src="assets/quiet.webp" alt="A quiet, tree-lined lane" width="1400" height="2100" loading="lazy">
+          <img src="assets/bike.webp" alt="A bike parked by a cycle path" width="1400" height="2100" loading="lazy">
+          <div class="mood-meta" aria-hidden="true">
+            <span data-mood-label>Coffee loop · 36 min</span>
+            <span class="dots"><b class="on"></b><b></b><b></b><b></b><b></b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phone tour: the screens change as the steps scroll by. -->
+    <section class="tour" id="how" aria-labelledby="tour-title">
+      <h2 id="tour-title" class="sr-only">How it works</h2>
+      <div class="tour-pin">
+        <div class="tour-steps">
+          <div class="tour-step">
+            <span class="num">01</span>
+            <h3>Where to today?</h3>
+            <p>Choose walk or ride, and how much time you have: 30 minutes, 45, an hour.</p>
+          </div>
+          <div class="tour-step">
+            <span class="num">02</span>
+            <h3>What feels like your day?</h3>
+            <p>Scenic paths, coffee walks, parks and nature. Pick a few and Outloop leans into them.</p>
+          </div>
+          <div class="tour-step">
+            <span class="num">03</span>
+            <h3>Three loops. Swipe.</h3>
+            <p>Every loop starts and ends right where you are. Pick the one that feels right.</p>
+          </div>
+          <div class="tour-step">
+            <span class="num">04</span>
+            <h3>Then just go.</h3>
+            <p>Turn-by-turn guidance, a live map and a recording you can keep. Offline, too.</p>
+          </div>
+        </div>
+        <div class="phone" aria-hidden="true">
+          <div class="screen">
+            <img src="assets/screen-01-welcome.webp" alt="" width="700" height="1518">
+            <img src="assets/screen-02-moods.webp" alt="" width="700" height="1518" loading="lazy">
+            <img src="assets/screen-05-cycle-60min.webp" alt="" width="700" height="1518" loading="lazy">
+            <img src="assets/screen-discover.webp" alt="" width="700" height="1522" loading="lazy">
+          </div>
+        </div>
+        <div class="tour-progress" aria-hidden="true">
+          <button type="button" class="on" tabindex="-1">Time</button>
+          <button type="button" tabindex="-1">Mood</button>
+          <button type="button" tabindex="-1">Loops</button>
+          <button type="button" tabindex="-1">Go</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plus: a rail of cards that slides sideways while the page scrolls down. -->
+    <section class="plus" id="plus" aria-labelledby="plus-title">
+      <div class="wrap plus-head">
+        <div class="eyebrow">Outloop Plus</div>
+        <h2 id="plus-title">Every loop, <span class="serif">everywhere.</span></h2>
+        <p>Plus opens every loop near you, and a few things you'll wonder how you walked without.</p>
+      </div>
+      <div class="rail-pin">
+        <div class="rail">
+          <article class="card photo">
+            <img src="assets/walk.webp" alt="" width="1400" height="934" loading="lazy">
+            <h3>3D flyovers</h3>
+            <p>Fly over every loop in 3D before you lace up.</p>
+          </article>
+          <article class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 300 180"><path d="M40 140 C 20 80, 90 30, 150 50 S 280 60, 250 130 S 90 170, 40 140Z" fill="none" stroke="var(--line)" stroke-width="10" stroke-linecap="round"/><path class="art-draw" d="M40 140 C 20 80, 90 30, 150 50 S 280 60, 250 130 S 90 170, 40 140Z" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round"/><circle cx="150" cy="50" r="12" fill="var(--card)" stroke="var(--accent)" stroke-width="5"/><circle cx="250" cy="130" r="12" fill="var(--card)" stroke="var(--accent)" stroke-width="5"/></svg>
+            </div>
+            <h3>Plan your own</h3>
+            <p>A loop built around your time, your stops and what you'd rather avoid.</p>
+          </article>
+          <article class="card photo">
+            <img src="assets/sunset.webp" alt="" width="1400" height="2100" loading="lazy">
+            <h3>The best time to go</h3>
+            <p>A nudge every day at the best time to head out, from the weather and the light.</p>
+          </article>
+          <article class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></span>
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 300 180"><g stroke="var(--line)" stroke-width="6" stroke-linecap="round"><path d="M20 30H280M20 90H280M20 150H280M50 10V170M130 10V170M210 10V170"/></g><g class="art-streets" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"><path d="M50 150V90"/><path d="M50 90H130"/><path d="M130 90V30"/><path d="M130 30H210"/><path d="M210 30V90"/><path d="M210 90H280"/></g></svg>
+            </div>
+            <h3>Streets you've walked</h3>
+            <p>See every street you've walked, and how much of your area you've explored.</p>
+          </article>
+          <article class="card photo">
+            <img src="assets/street.webp" alt="" width="1400" height="2100" loading="lazy">
+            <h3>Stories on the way</h3>
+            <p>Hear the story of the places you pass, as you reach them.</p>
+          </article>
+          <article class="card photo">
+            <img src="assets/waterfront.webp" alt="" width="1400" height="934" loading="lazy">
+            <h3>Travel mode</h3>
+            <p>Take a city's best loops with you, offline.</p>
+          </article>
+          <article class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3a9 9 0 1 0 8 13"/><path d="M13 7a5 5 0 1 0 4.5 7.2"/></svg></span>
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 300 180"><circle cx="150" cy="90" r="70" fill="none" stroke="var(--line)" stroke-width="16"/><circle class="art-ring" cx="150" cy="90" r="70" fill="none" stroke="var(--accent)" stroke-width="16" stroke-linecap="round" transform="rotate(-90 150 90)"/><text x="150" y="98" text-anchor="middle" fill="var(--ink)" font-size="26" font-weight="700" font-family="-apple-system, sans-serif">+1,840</text></svg>
+            </div>
+            <h3>Close your step goal</h3>
+            <p>Short of your steps? A loop that's exactly long enough.</p>
+          </article>
+          <article class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 300 180"><g font-family="-apple-system, sans-serif" font-size="15" font-weight="600" text-anchor="middle"><g fill="var(--surface)"><rect x="10" y="60" width="34" height="60" rx="17"/><rect x="51" y="60" width="34" height="60" rx="17"/><rect x="92" y="60" width="34" height="60" rx="17"/><rect x="133" y="60" width="34" height="60" rx="17"/><rect x="174" y="60" width="34" height="60" rx="17"/><rect x="215" y="60" width="34" height="60" rx="17"/><rect x="256" y="60" width="34" height="60" rx="17"/></g><g class="art-days" fill="var(--accent)"><rect x="10" y="60" width="34" height="60" rx="17"/><rect x="92" y="60" width="34" height="60" rx="17"/><rect x="174" y="60" width="34" height="60" rx="17"/><rect x="256" y="60" width="34" height="60" rx="17"/></g><g fill="var(--ink-soft)"><text x="27" y="96">M</text><text x="68" y="96">T</text><text x="109" y="96">W</text><text x="150" y="96">T</text><text x="191" y="96">F</text><text x="232" y="96">S</text><text x="273" y="96">S</text></g></g></svg>
+            </div>
+            <h3>A walking routine</h3>
+            <p>Pick your days. A fresh loop is waiting every time.</p>
+          </article>
+          <article class="card">
+            <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 300 180"><g fill="none" stroke-width="8" stroke-linecap="round"><path d="M30 150 L90 100 L140 120 L200 60 L270 30" stroke="var(--line)"/><path class="art-draw" d="M30 150 L90 100 L140 120 L200 60 L270 30" stroke="var(--accent)"/></g><circle cx="270" cy="30" r="12" fill="var(--accent)"/></svg>
+            </div>
+            <h3>Weekly challenges & GPX</h3>
+            <p>A bonus challenge every week, and export any loop as GPX.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare" aria-labelledby="compare-title">
+      <div class="wrap">
+        <div class="eyebrow">Free or Plus</div>
+        <h2 id="compare-title">Start free. <span class="serif">Go further</span> when you want to.</h2>
+        <div class="plans">
+          <div class="plan">
+            <h3>Free</h3>
+            <div class="price">Free, forever</div>
+            <ul>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>3 fresh route ideas a day</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>The 3 closest loops for walking and for riding</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>Save up to 25 loops</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>Keep 1 loop offline</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>Turn-by-turn guidance, recording and Apple Health</li>
+            </ul>
+          </div>
+          <div class="plan plus-plan">
+            <h3>Plus</h3>
+            <div class="price">Weekly, monthly or yearly</div>
+            <ul>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>Every loop near you, and unlimited route ideas</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>Unlimited saves and offline loops</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>3D flyovers, the planner and travel mode</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>Best-time nudges, routine and step goal loops</li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l3.5 3.5L16 6"/></svg>Streets explored, stories, challenges and GPX export</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fine">Prices are shown in the app in your local currency. Subscriptions renew automatically until cancelled in your Apple ID settings. <a href="terms.html#subscriptions">Subscription terms</a></p>
+      </div>
+    </section>
+
+    <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+      <div class="wrap">
+        <div class="privacy-head">
+          <div>
+            <div class="eyebrow">Privacy</div>
+            <h2 id="privacy-title">Your map <span class="serif">stays yours.</span></h2>
+          </div>
+          <p>Where you walk says a lot about you. So Outloop keeps it on your iPhone, shows no ads and tracks nothing. Nothing leaves your phone unless you ask it to.</p>
+        </div>
+        <div class="vault">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+            <h3>On your iPhone</h3>
+            <p>Your walks, saved loops and GPS tracks live on your device.</p>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1 0 9z"/><path d="M12 11v5M9.5 13.5L12 11l2.5 2.5"/></svg>
+            <h3>Backup is your call</h3>
+            <p>Account backup is off until you turn it on, and you can turn it off anytime.</p>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="2.5"/></svg>
+            <h3>A hidden start</h3>
+            <p>Shared routes start and end away from your front door.</p>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg>
+            <h3>Gone when you say so</h3>
+            <p>Export everything, or delete your data and account right in the app.</p>
+          </div>
+        </div>
+        <div class="blur-pin" aria-hidden="true">
+          <img src="assets/loop-map.webp" alt="" width="1400" height="934" loading="lazy">
+          <div class="zone">Your start stays private</div>
+        </div>
+        <div class="links">
+          <a class="pill" href="privacy.html">Read the privacy policy</a>
+          <a class="pill ghost" href="terms.html" style="margin-top:40px">Terms of use</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finale: the loop draws itself and closes. -->
+    <section class="finale" id="get" aria-labelledby="get-title">
+      <div class="wrap">
+        <svg class="finale-loop" viewBox="0 0 760 380" aria-hidden="true">
+          <path class="track" d="M380 330 C 230 334, 92 290, 100 190 C 108 90, 240 46, 320 92 C 372 122, 412 64, 500 52 C 616 36, 694 124, 664 214 C 636 300, 520 328, 380 330 Z"/>
+          <path class="draw" d="M380 330 C 230 334, 92 290, 100 190 C 108 90, 240 46, 320 92 C 372 122, 412 64, 500 52 C 616 36, 694 124, 664 214 C 636 300, 520 328, 380 330 Z"/>
+          <g class="stops"></g>
+          <circle class="walker" r="11" cx="380" cy="330"/>
+          <circle class="home" r="15" cx="380" cy="330"/>
+          <text x="380" y="368" text-anchor="middle">Start · Finish</text>
+        </svg>
+        <h2 id="get-title" data-split>Back where you <span class="serif">started.</span></h2>
+        <p>Same door, a better afternoon. Outloop is free to download for iPhone.</p>
+        <div class="ctas">
+          <a class="pill" href="#get" data-appstore>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.7c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.05-1.65-1.3-.13-2.53.76-3.19.76-.66 0-1.67-.74-2.75-.72-1.41.02-2.72.82-3.45 2.09-1.47 2.55-.38 6.33 1.06 8.4.7 1.01 1.53 2.15 2.62 2.11 1.05-.04 1.45-.68 2.72-.68 1.27 0 1.63.68 2.74.66 1.13-.02 1.85-1.03 2.54-2.05.8-1.17 1.13-2.3 1.15-2.36-.03-.01-2.2-.85-2.22-3.36zM14.3 6.53c.58-.7.97-1.68.86-2.65-.83.03-1.84.55-2.44 1.25-.53.62-1 1.61-.88 2.56.93.07 1.88-.47 2.46-1.16z"/></svg>
+            <span data-appstore-label>Download on the App Store</span>
+          </a>
+          <a class="pill ghost" href="support.html">Questions? Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="28" height="28">Outloop</a>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Appearance">
+        <button type="button" data-theme-choice="auto">Auto</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      <p class="credit">© 2026 Outloop. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>. Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a>. Apple, the Apple logo and iPhone are trademarks of Apple Inc. App Store is a service mark of Apple Inc.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
