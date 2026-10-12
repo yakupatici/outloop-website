@@ -4,7 +4,6 @@ Static site: no build step. `index.html` (landing, GSAP 3.12.5 from cdnjs), `pri
 
 ## Before publishing
 
-- Replace `contact@yourdomain.com` in `privacy.html`, `terms.html` and `support.html` with a real address.
 - When the app is live, set `APP_STORE_URL` at the top of `js/main.js`. Until then the buttons read "Coming soon".
 
 ## Hosting
