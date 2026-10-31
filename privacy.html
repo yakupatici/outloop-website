@@ -44,8 +44,8 @@
     <div class="wrap">
       <div class="summary">
         <div><strong>No ads. No tracking.</strong><span>We don't sell data, show ads, use advertising IDs or track you across other apps and websites.</span></div>
-        <div><strong>On your iPhone first.</strong><span>Your walks, GPS tracks and saved loops are stored on your device. Account backup is off until you turn it on.</span></div>
-        <div><strong>Delete it all, anytime.</strong><span>Export your data, erase it from your phone, or delete your account and backup from inside the app.</span></div>
+        <div><strong>On your iPhone first.</strong><span>Your walks, GPS tracks and saved loops are stored on your device. iCloud backup is off until you turn it on.</span></div>
+        <div><strong>Delete it all, anytime.</strong><span>Export your data, erase it from your phone, or delete your account from inside the app.</span></div>
       </div>
 
       <div class="doc">
@@ -82,12 +82,12 @@
               <thead><tr><th>Data</th><th>Why</th><th>Where it lives</th></tr></thead>
               <tbody>
                 <tr><td>Your location</td><td>To suggest loops near you, guide you and record your walks and rides</td><td>On your iPhone. Area coordinates are sent to the map, path, weather and story services described below.</td></tr>
-                <tr><td>Recorded walks and rides (GPS track, distance, duration)</td><td>So you can keep and revisit them</td><td>On your iPhone. In your account backup only if you turn backup on.</td></tr>
-                <tr><td>Saved loops, collections, drafts, ratings and notes</td><td>So your saved things stay saved</td><td>On your iPhone. In your account backup only if you turn backup on.</td></tr>
-                <tr><td>Email address, name and account ID</td><td>To create and sign in to your account</td><td>Our backend provider, Supabase</td></tr>
-                <tr><td>Display name, username and start-privacy setting</td><td>To restore your profile on a new device</td><td>On your iPhone. In your account backup only if you turn backup on.</td></tr>
+                <tr><td>Recorded walks and rides (GPS track, distance, duration)</td><td>So you can keep and revisit them</td><td>On your iPhone. In your own iCloud only if you turn backup on.</td></tr>
+                <tr><td>Saved loops, collections, drafts, ratings and notes</td><td>So your saved things stay saved</td><td>On your iPhone. In your own iCloud only if you turn backup on.</td></tr>
+                <tr><td>Email address, name and account ID</td><td>To create and sign in to your account</td><td>Our sign-in provider, Google Firebase Authentication</td></tr>
+                <tr><td>Display name, username and start-privacy setting</td><td>To restore your profile on a new device</td><td>On your iPhone. In your own iCloud only if you turn backup on.</td></tr>
                 <tr><td>Profile photo</td><td>To show on your profile</td><td>Only on your iPhone. It's never uploaded.</td></tr>
-                <tr><td>Crash and performance reports</td><td>To find and fix bugs</td><td>Supabase, not linked to you or your account</td></tr>
+                <tr><td>Crash and performance reports</td><td>To find and fix bugs</td><td>Apple shares them with us only if you agreed to share analytics with developers; not linked to you</td></tr>
               </tbody>
             </table>
             <p>We do <strong>not</strong> collect contacts, photos from your library, advertising identifiers, browsing history, or precise location in the background when you aren't recording.</p>
@@ -106,11 +106,11 @@
             <h3>Signing in</h3>
             <p>You can use Outloop with an account created with <strong>Sign in with Apple</strong>, <strong>Google</strong> or an email and password. We receive your email address (or Apple's private relay address if you choose to hide yours), your name if you share it, and a unique account ID. Passwords are handled by our authentication provider and are never visible to us.</p>
             <h3>Backup is off until you turn it on</h3>
-            <p>With <strong>Back up to your account</strong> switched on (in the You tab), Outloop stores a copy of your saved loops, recorded walks and rides including their GPS tracks, drafts, collections, and your display name, username and start-privacy setting, so they can be restored when you sign in on another iPhone.</p>
+            <p>With <strong>Back up to iCloud</strong> switched on (in the You tab), Outloop stores a copy of your saved loops, recorded walks and rides including their GPS tracks, drafts, collections, and your display name, username and start-privacy setting in the private part of <strong>your own iCloud account</strong>, so they come back on another iPhone signed in to the same Apple Account. It doesn't need an Outloop account.</p>
             <p>So that something you deleted on one phone doesn't come back from another, the backup also keeps a short list of what you deleted and when, for up to 180 days. This list contains identifiers only, not the deleted content.</p>
-            <p>You can turn backup off at any time. Backups are protected so that only your signed-in account can read them.</p>
+            <p>You can turn backup off at any time. The backup lives in your iCloud's private database: only you can read it, and we have no copy and no access to it. You can see or remove it in Settings → [your name] → iCloud.</p>
             <h3>Deleting your account</h3>
-            <p>Go to the You tab → Delete account. This permanently deletes your account and your backup from our servers. If you signed in with Apple, we also ask Apple to revoke Outloop's access to your Apple ID. Data stored only on your phone stays there until you erase it (You → Profile, privacy &amp; your data → Hold to delete all data on this device) or delete the app.</p>
+            <p>Go to the You tab → Delete account. This permanently deletes your account from our sign-in provider. Your iCloud backup is yours and stays in your iCloud until you remove it there. If you signed in with Apple, we also ask Apple to revoke Outloop's access to your Apple ID. Data stored only on your phone stays there until you erase it (You → Profile, privacy &amp; your data → Hold to delete all data on this device) or delete the app.</p>
           </section>
 
           <section id="health">
@@ -129,20 +129,19 @@
             <table>
               <thead><tr><th>Provider</th><th>What it does</th><th>What it receives</th></tr></thead>
               <tbody>
-                <tr><td>Supabase</td><td>Accounts, opt-in backup, crash reports, and our gateway to OpenStreetMap</td><td>Account details, your backup if switched on, crash reports, and the area of map we need paths for</td></tr>
-                <tr><td>Apple</td><td>Maps and directions (MapKit), Sign in with Apple, in-app purchases, Apple Health, crash diagnostics (MetricKit), on-device text for stories</td><td>Governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Map requests include the area you're viewing.</td></tr>
+                <tr><td>Google Firebase Authentication</td><td>Accounts: sign-in with Apple, Google or email</td><td>Your email address, name and account ID. Governed by the <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a></td></tr>
+                <tr><td>Apple</td><td>Maps and directions (MapKit), Sign in with Apple, iCloud backup if you turn it on, in-app purchases, Apple Health, crash diagnostics, on-device text for stories</td><td>Governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Map requests include the area you're viewing.</td></tr>
                 <tr><td>Google</td><td>Sign in with Google, only if you choose it</td><td>Governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a></td></tr>
-                <tr><td>OpenStreetMap (Overpass API)</td><td>Footpaths, parks and cycle paths used to build loops</td><td>Requests go through our gateway, so OpenStreetMap sees the area being searched but not your device or IP address</td></tr>
+                <tr><td>OpenStreetMap (Overpass API)</td><td>Footpaths, parks and cycle paths used to build loops</td><td>The area being searched, sent from your device (so it also sees your IP address)</td></tr>
                 <tr><td>Open-Meteo</td><td>Weather, light and elevation for a route</td><td>The coordinates of the route, sent from your device (so it also sees your IP address)</td></tr>
                 <tr><td>Wikipedia (Wikimedia Foundation)</td><td>Stories about landmarks you pass (Plus)</td><td>Points along the loop, sent from your device, to find articles about nearby places</td></tr>
               </tbody>
             </table>
-            <p>To protect the free services we depend on from abuse, our gateway keeps a <strong>one-way hash</strong> of the IP address of each request for rate limiting. The hash can't be turned back into your address, and it's deleted within 24 hours. Search results for map areas are cached without any information about who asked.</p>
           </section>
 
           <section id="diagnostics">
             <h2>Crash reports</h2>
-            <p>When the app crashes or freezes, iOS gives Outloop a diagnostic report (through Apple's MetricKit). Outloop sends that report to us together with the app version and iOS version. These reports are <strong>not linked</strong> to your account, don't include your location, and are used only to fix problems. If you've turned off "Share With App Developers" in Settings → Privacy &amp; Security → Analytics &amp; Improvements, iOS doesn't provide these reports.</p>
+            <p>When the app crashes or freezes, Apple may share a diagnostic report with us through App Store Connect. These reports are <strong>not linked</strong> to your account, don't include your location, and are used only to fix problems. If you've turned off "Share With App Developers" in Settings → Privacy &amp; Security → Analytics &amp; Improvements, iOS doesn't provide these reports.</p>
           </section>
 
           <section id="purchases">
@@ -161,9 +160,8 @@
             <h2>How long we keep it</h2>
             <ul>
               <li><strong>Account details</strong>: until you delete your account.</li>
-              <li><strong>Backup</strong>: until you delete your account. Each new backup replaces the previous one. The list of deleted items is kept for up to 180 days.</li>
+              <li><strong>iCloud backup</strong>: in your iCloud until you remove it. Each new backup replaces the previous one. The list of deleted items is kept for up to 180 days.</li>
               <li><strong>Crash reports</strong>: only as long as needed to fix the problem, and no longer than 12 months.</li>
-              <li><strong>Hashed IP addresses for rate limiting</strong>: up to 24 hours.</li>
               <li><strong>Data on your iPhone</strong>: until you erase it in the app or delete the app.</li>
             </ul>
           </section>
@@ -172,12 +170,12 @@
             <h2>Your rights</h2>
             <p>Depending on where you live, including under the EU and UK GDPR and Turkey's Personal Data Protection Law (KVKK), you have the right to access, correct, export and delete your personal data, to object to or restrict its processing, and to withdraw consent at any time.</p>
             <p>Most of this you can do yourself in the app: export your data, turn backup off, erase data on your phone or delete your account. For anything else, <a href="#contact">contact us</a> and we'll respond within 30 days. You also have the right to complain to your local data protection authority.</p>
-            <p>We process your data to provide the app you asked for (performance of a contract), on the basis of your consent for backup, location and Health access, and on our legitimate interest in keeping the app working and secure for crash reports and rate limiting.</p>
+            <p>We process your data to provide the app you asked for (performance of a contract), on the basis of your consent for backup, location and Health access, and on our legitimate interest in keeping the app working and secure for crash reports.</p>
           </section>
 
           <section id="transfers">
             <h2>International transfers</h2>
-            <p>Our servers, operated by Supabase, and some of the providers above may be located outside your country. When data is transferred abroad, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses, and on your explicit consent when you turn on backup.</p>
+            <p>Our sign-in provider, Google Firebase, and some of the providers above may be located outside your country. When data is transferred abroad, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses, and on your explicit consent when you turn on backup.</p>
           </section>
 
           <section id="children">
