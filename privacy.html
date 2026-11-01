@@ -37,7 +37,7 @@
         <div class="eyebrow">Privacy Policy</div>
         <h1>Where you walk is <span class="serif">your business.</span></h1>
         <p class="lede">This policy explains what Outloop collects, why, who else is involved and how you can see or delete all of it. We've written it to be read, not skimmed past.</p>
-        <p class="meta">Effective October 12, 2026</p>
+        <p class="meta">Effective November 1, 2026</p>
       </div>
     </div>
 
@@ -132,7 +132,8 @@
                 <tr><td>Google Firebase Authentication</td><td>Accounts: sign-in with Apple, Google or email</td><td>Your email address, name and account ID. Governed by the <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a></td></tr>
                 <tr><td>Apple</td><td>Maps and directions (MapKit), Sign in with Apple, iCloud backup if you turn it on, in-app purchases, Apple Health, crash diagnostics, on-device text for stories</td><td>Governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Map requests include the area you're viewing.</td></tr>
                 <tr><td>Google</td><td>Sign in with Google, only if you choose it</td><td>Governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a></td></tr>
-                <tr><td>OpenStreetMap (Overpass API)</td><td>Footpaths, parks and cycle paths used to build loops</td><td>The area being searched, sent from your device (so it also sees your IP address)</td></tr>
+                <tr><td>OpenStreetMap (Overpass API)</td><td>Footpaths, parks and cycle paths used to build loops</td><td>The area being searched. Sent through our Cloudflare relay, so OpenStreetMap sees Cloudflare rather than your IP address; if the relay can't be reached, sent from your device (so it also sees your IP address)</td></tr>
+                <tr><td>Cloudflare</td><td>Our relay to OpenStreetMap: passes on the app's map queries and keeps each answer in its cache for 24 hours so nearby requests are faster</td><td>The area being searched and your IP address, which reaches Cloudflare with every request as with any website. We don't use it, and we store no logs or IP addresses. Governed by <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a></td></tr>
                 <tr><td>Open-Meteo</td><td>Weather, light and elevation for a route</td><td>The coordinates of the route, sent from your device (so it also sees your IP address)</td></tr>
                 <tr><td>Wikipedia (Wikimedia Foundation)</td><td>Stories about landmarks you pass (Plus)</td><td>Points along the loop, sent from your device, to find articles about nearby places</td></tr>
               </tbody>
